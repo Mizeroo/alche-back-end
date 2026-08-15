@@ -2,9 +2,7 @@
 """Module that exports an employee's TODO list data to CSV format."""
 import csv
 import requests 
-
 import sys 
-
 
 if __name__ == "__main__":
     employee_id = int(sys.argv[1])
