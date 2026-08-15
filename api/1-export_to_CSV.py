@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Module that exports an employee's TODO list data to CSV format."""
 import csv
-import sys
+import requests 
 
-import requests
+import sys 
 
 
 if __name__ == "__main__":
