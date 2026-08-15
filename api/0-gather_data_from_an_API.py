@@ -2,9 +2,9 @@
 """Module that gathers data about an employee's TODO list progress
 from a REST API.
 """
-import sys
-
 import requests
+
+import sys
 
 
 if __name__ == "__main__":
