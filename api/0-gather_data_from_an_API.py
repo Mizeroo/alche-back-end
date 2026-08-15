@@ -15,14 +15,16 @@ if __name__ == "__main__":
     data = r.json()
     employee_name = data["name"]
 
-    todos_r = requests.get("{}/todos".format(BASE_URL),
-                            params={"userId": employee_id})
+    todos_r = requests.get(
+        "{}/todos".format(BASE_URL),
+        params={"userId": employee_id}
+    )
     todos_data = todos_r.json()
     total_tasks = len(todos_data)
 
     completed_task = []
     for task in todos_data:
-        if task['completed'] == True:
+        if task['completed']:
             completed_task.append(task)
     number_done = len(completed_task)
 
